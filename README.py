@@ -23,32 +23,63 @@
 # 
 # Para configurar/instalar/usar o `pdfunite` no `Linux Ubuntu`, você pode seguir estes passos:
 # 
-# 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+# 1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+# 
+#     ```bash
+#     Ctrl + Alt + T
+#     ```
 
 # 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 # 
-#     2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
-#     
-#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
+#     ```bash
+#     sudo apt clean
+#     ```
 # 
-#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+#     2.2 Remover pacotes `.deb` antigos ou duplicados do `cache` local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
+#     ```bash
+#     sudo apt autoclean
+#     ```
 # 
-#     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update`
+#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
+#     ```bash
+#     sudo apt autoremove -y
+#     ```
 # 
-#     2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes: `sudo apt --fix-broken install`
+#     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`:
+#     ```bash
+#     sudo apt update
+#     ```
 # 
-#     2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
-#     
-#     2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+#     2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes:
+#     ```bash
+#     sudo apt --fix-broken install
+#     ```
 # 
-#     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
-#     
+#     2.6 Limpar o `cache` do gerenciador de pacotes `apt` novamente:
+#     ```bash
+#     sudo apt clean
+#     ```
+# 
+#     2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:
+#     ```bash
+#     sudo apt list --upgradable
+#     ```
+# 
+#     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`:
+#     ```bash
+#     sudo apt full-upgrade -y
+#     ```
 
 # ### 1.1 Configurar/Instalar/usar o `pdfunite`
 # 
-# Para juntar dois arquivos PDF em um único no Linux, você pode usar várias ferramentas disponíveis na linha de comando. É possível usar o `pdfunite`, parte do pacote `poppler-utils`.
+# Para juntar dois arquivos PDF em um único no `Linux Ubuntu`, você pode usar várias ferramentas disponíveis na linha de comando. É possível usar o `pdfunite`, parte do pacote `poppler-utils`.
 # 
-# 1. **Para instalar o `poppler-utils` (que inclui o `pdfunite`), use o seguinte comando:** Para sistemas baseados em Debian (como Ubuntu): `sudo apt install poppler-utils -y`
+# 1. **Para instalar o `poppler-utils` (que inclui o `pdfunite`), use o seguinte comando:** Para sistemas baseados em Debian (como Ubuntu):
+# 
+#     ```bash
+#     sudo apt install poppler-utils -y
+#     ```
 # 
 
 # ## 1.2 Juntar os arquivos `.pdf` com o `pdfunite`
@@ -59,7 +90,11 @@
 # 
 # ## 1.2.1 Juntar muitos arquivos `.pdf` com o `pdfunite`
 # 
-# 1. **Para juntar muitos arquivos `.pdf`, use o comando:** `pdfunite arquivo1.pdf arquivo2.pdf arquivo3.pdf arquivo_unido.pdf`
+# 1. **Para juntar muitos arquivos `.pdf`, use o comando:**
+# 
+#     ```bash
+#     pdfunite arquivo1.pdf arquivo2.pdf arquivo3.pdf arquivo_unido.pdf
+#     ```
 # 
 #     Novamente, substitua `arquivo1.pdf`, `arquivo2.pdf` e `arquivo3.pdf` pelos nomes dos seus arquivos `.pdf` que deseja juntar, e `arquivo_unido.pdf` pelo nome que deseja dar ao arquivo `.pdf` resultante.
 # 
@@ -72,11 +107,15 @@
 # 
 # Para configurar/instalar/usar o `pdfunite` no `Linux Ubuntu`sem precisar digitar linha por linha, você pode seguir estas etapas:
 # 
-# 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+# 1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+# 
+#     ```bash
+#     Ctrl + Alt + T
+#     ```
 # 
 # 2. Digite o seguinte comando e pressione `Enter`:
 # 
-#     ```
+#     ```bash
 #     sudo apt clean
 #     sudo apt autoclean
 #     sudo apt autoremove -y
@@ -91,7 +130,7 @@
 
 # ## Referências
 # 
-# [3] OPENAI. ***Unir arquivos pdf: pdftk vs. pdfunite:***. Disponível em: <https://chat.openai.com/c/592706f3-7b05-4cff-859e-c5b1727e4735> (texto adaptado). Acessado em: 19/02/2024 13:47.
+# [3] OPENAI. ***Instalar o `pdfunite` no `linux ubuntu` pelo `terminal emulator`.***. Disponível em: <https://chatgpt.com/g/g-p-6980caf949648191ad6acfcdbe590f9e-instalar/project> (texto adaptado). Acessado em: 19/02/2024 13:47.
 # 
 # [2] OPENAI. ***Vs code: editor popular***. Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). Acessado em: 19/02/2024 13:48.
 # 
